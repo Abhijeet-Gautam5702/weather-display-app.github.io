@@ -1,0 +1,60 @@
+<!--Weather App using HTML CSS and Javascript-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="search">
+        <label class="search-input-label" for="search-bar">
+          <input
+            type="text"
+            id="search-bar"
+            placeholder="search for any city"
+          />
+        </label>
+        <!-- <button class="search-button"></button> -->
+        <button class="search-btn">
+          <img
+            class="search-btn-icon"
+            src="icons/search.svg"
+            alt="searchIcon"
+          />
+        </button>
+      </div>
+
+      <div class="weather-container loading">
+        <h3 class="city">Weather in Kanpur</h2>
+        <h1 class="temp">35°C</h1>
+        <div class="weather-info-container">
+          <div class="icon-container">
+            <img
+              class="weather-icon"
+              src="https://openweathermap.org/img/wn/04n@2x.png"
+              alt=""
+            />
+          </div>
+          <div class="weather-info">
+            <p class="desc">Haze</p>
+            <p class="wind">Wind speed: 2.4 kmph</p>
+            <p class="humidity">Humidity: 30%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+  </body>
+</html>
